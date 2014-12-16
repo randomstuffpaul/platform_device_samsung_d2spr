@@ -27,7 +27,13 @@
 -include vendor/samsung/d2spr/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := d2spr,d2spi,d2tfnspr,d2lte
+TARGET_OTA_ASSERT_DEVICE := d2spr,d2lterefreshspr,d2spi,d2tfnspr,d2lte
 
 TARGET_BOARD_INFO_FILE ?= device/samsung/d2spr/board-info.txt
 
+# Vendor Init
+TARGET_UNIFIED_DEVICE := true
+TARGET_INIT_VENDOR_LIB := libinit_d2spr
+TARGET_LIBINIT_DEFINES_FILE := device/samsung/d2spr/init/init_d2spr.c
+
+TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/d2spr
