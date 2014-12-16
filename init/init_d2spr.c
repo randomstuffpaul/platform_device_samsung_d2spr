@@ -63,6 +63,8 @@ void vendor_load_properties()
         property_set("gsm.operator.numeric", "311870");
         property_set("gsm.sim.operator.iso-country", "US");
         property_set("gsm.operator.iso-country", "US");
+        property_set("telephony.slteOnCdmaDevice", "1");
+        property_set("gsm.defaultpdpcontext.active", "true");
     } else {
         /* d2spr */
         property_set("ro.build.fingerprint", "samsung/d2spr/d2spr:4.4.2/KOT49H/L710VPUDND8:user/release-keys");
