@@ -18,11 +18,7 @@
 $(call inherit-product-if-exists, vendor/samsung/d2spr/d2spr-vendor.mk)
 
 ## overlays
-DEVICE_PACKAGE_OVERLAYS += device/samsung/d2spr/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/d2refreshspr/overlay
 
 # Inherit from d2-common
 $(call inherit-product, device/samsung/d2-common/d2-common.mk)
-
-PRODUCT_COPY_FILES += \
-    device/samsung/d2spr/rootdir/etc/apns-conf-boost.xml:system/etc/apns-conf-boost.xml \
-    device/samsung/d2spr/rootdir/data/eri-boost.xml:system/etc/eri-boost.xml
